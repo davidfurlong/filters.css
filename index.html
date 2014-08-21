@@ -1,0 +1,183 @@
+<html>
+<head>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="demo.css">
+	<link rel="stylesheet" type="text/css" href="filters.css">
+	<script>
+	// function DropDown(el) {
+	// 	this.dd = el;
+	// 	this.placeholder = this.dd.children('div');
+	// 	this.opts = this.dd.find('ul.dropdown > li');
+	// 	this.val = '';
+	// 	this.index = -1;
+	// 	this.initEvents();
+	// }
+	// DropDown.prototype = {
+	// 	initEvents : function() {
+	// 		var obj = this;
+
+	// 		obj.dd.on('click', function(event){
+	// 			$(this).toggleClass('active');
+	// 			return false;
+	// 		});
+
+	// 		obj.opts.on('click',function(){
+	// 			var opt = $(this);
+	// 			obj.val = opt.text();
+	// 			obj.index = opt.index();
+	// 			obj.placeholder.text(obj.val);
+	// 		});
+	// 	},
+	// 	getValue : function() {
+	// 		return this.val;
+	// 	},
+	// 	getIndex : function() {
+	// 		return this.index;
+	// 	}
+	// }
+
+	// $(function() {
+	// 	var d1 = new DropDown( $('#d1') );
+	// 	var d2 = new DropDown( $('#d2') );
+	// 	var d3 = new DropDown( $('#d3') );
+	// 	var d4 = new DropDown( $('#d4') );
+
+	// 	$(document).click(function() {
+	// 		// all dropdowns
+	// 		$('.wrapper-dropdown-3').removeClass('active');
+	// 	});
+
+	// });
+
+	$(document).ready(function(){
+		$('#filter1').click(function(){
+			$('body').removeClass();
+			$('body').addClass('pumpkin');
+			$('body').addClass('multiply');
+		});
+
+		$('#filter2').click(function(){
+			$('body').removeClass();
+			$('body').addClass('dark');
+			$('body').addClass('dots');
+		});
+
+		$('#filter3').click(function(){
+			$('body').removeClass();
+			$('body').addClass('blur');
+		});
+		$('#filter4').click(function(){
+			$('body').removeClass();
+			$('body').addClass('emerald');
+			$('body').addClass('color-burn');
+		});
+	});
+	</script>
+</head>
+<body class="bw">
+	<!-- <div class="filters">
+		<div id="group1">
+		<div id="d1" class="wrapper-dropdown-3" tabindex="1">
+		    <div>Color Effects</div>
+		    <ul class="dropdown">
+		        <li><a href="#">Fade</a></li>
+		        <li><a href="#">Saturate</a></li>
+		        <li><a href="#">Tint</a></li>
+		        <li><a href="#">Opacity</a></li>
+		        <li><a href="#">Black & White</a></li>
+		        <li><a href="#">Dark</a></li>
+		        <li><a href="#">Bright</a></li>
+		        <li><a href="#">Sepia</a></li>
+		        <li><a href="#">Contrast</a></li>
+		        <li><a href="#">Invert</a></li>
+		        <li><a href="#">Hue</a></li>
+		    </ul>
+		</div>
+		</div>
+		<div id="group2">
+		<div id="d2" class="wrapper-dropdown-3" tabindex="1">
+		    <div>Patterns</div>
+		    <ul class="dropdown">
+		        <li><a href="#">Stripes-h</a></li>
+		        <li><a href="#">Dark Stripes-h</a></li>
+		        <li><a href="#">Stripes-v</a></li>
+		        <li><a href="#">Dark Stripes-v</a></li>
+		        <li><a href="#">Glossy</a></li>
+		        <li><a href="#">Blueprint</a></li>
+		        <li><a href="#">Dots</a></li>
+		        <li><a href="#">Dark Dots</a></li>
+		        <li><a href="#">Cubes</a></li>
+		        <li><a href="#">Dark Cubes</a></li>
+		        <li><a href="#">Pluses</a></li>
+		        <li><a href="#">Steps</a></li>
+		        <li><a href="#">LED</a></li>
+		        <li><a href="#">Hexagon</a></li>
+		        <li><a href="#">Noise</a></li>
+		    </ul>
+		</div>
+		</div>
+		<div id="group3">
+		<div id="d3" class="wrapper-dropdown-3" tabindex="1">
+		    <div>Color (FlatUI)</div>
+		    <ul class="dropdown">
+		        <li><a href="#">Spectrum</a></li>
+		        <li><a href="#">Turqoise</a></li>
+		        <li><a href="#">Emerald</a></li>
+		        <li><a href="#">Peter-river</a></li>
+		        <li><a href="#">amethyst</a></li>
+		        <li><a href="#">Wet-asphalt</a></li>
+		        <li><a href="#">Green-sea</a></li>
+		        <li><a href="#">Nephritis</a></li>
+		        <li><a href="#">Belize-hole</a></li>
+		        <li><a href="#">Wisteria</a></li>
+		        <li><a href="#">Midnight-blue</a></li>
+		        <li><a href="#">Sunflower</a></li>
+		        <li><a href="#">Carrot</a></li>
+		        <li><a href="#">Alizarin</a></li>
+		        <li><a href="#">Clouds</a></li>
+		        <li><a href="#">Concrete</a></li>
+		        <li><a href="#">Orange</a></li>
+		        <li><a href="#">Pumpkin</a></li>
+		        <li><a href="#">Pomegranite</a></li>
+		        <li><a href="#">Silver</a></li>
+		        <li><a href="#">Asbestos</a></li>
+		    </ul>
+		</div>
+		<div id="d4" class="wrapper-dropdown-3" tabindex="1">
+		    <div>Blend</div>
+		    <ul class="dropdown">
+		        <li><a href="#">Multiply</a></li>
+		        <li><a href="#">Screen</a></li>
+		        <li><a href="#">Overlay</a></li>
+		        <li><a href="#">Darken</a></li>
+		        <li><a href="#">Lighten</a></li>
+		        <li><a href="#">Color-Dodge</a></li>
+		        <li><a href="#">Color-burn</a></li>
+		        <li><a href="#">Hard light</a></li>
+		        <li><a href="#">Soft Light</a></li>
+		        <li><a href="#">Difference</a></li>
+		        <li><a href="#">Exclusion</a></li>
+		        <li><a href="#">Hue</a></li>
+		        <li><a href="#">Saturation</a></li>
+		        <li><a href="#">Color</a></li>
+		        <li><a href="#">Luminosity</a></li>
+		    </ul>
+		</div>
+		</div>
+	</div> -->
+	<div class="splash">
+		<h1>Filters.css</h1>
+		<h2>Super simple styles for your images</h2>
+		<h3>Works with background images & img tags</h3>
+		<h3><a href="">Download</a> or <a href="">View on Github</a></h3>
+		<div id="buttons">
+			<div align="right"><input type="submit" value=".pumpkin .multiply" id="filter1"></div>
+			<div align="right"><input type="submit" value=".emerald .color-burn" id="filter4"></div>
+			<div align="right"><input type="submit" value=".dark .dots" id="filter2"></div>
+			<div align="right"><input type="submit" value=".blur" id="filter3"></div>	
+			<h5>Lots more filters<br>see the documentation @ github</h5>	
+		</div>
+	</div>
+</body>
+</html>
