@@ -1,10 +1,9 @@
 # Filters.css
 
- 
-http://davidfurlong.github.io/filters.css
-
 Really easy to use image filters, patterns and color blending.
 Intended to help make full image backgrounds on websites better.
+
+http://davidfurlong.github.io/filters.css
 
 ## Instructions
 
@@ -47,7 +46,7 @@ OR
 - Saturate
 - Tint
 - Opacity
-- Black & White
+- Black & White (.bw)
 - Dark
 - Bright
 - Sepia
@@ -141,6 +140,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+### Contributing
+
+Things to do:
+- Add Instagramesque filters which are more advanced and use canvas
+- Add normals colors
+- Allow applying of multiple filters
+- Reduce nr of filters
 
 ### Attributions
 
