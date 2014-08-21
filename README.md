@@ -38,83 +38,82 @@ OR
 
 ### List of class names
 
-		    </ul>
-		</div>
-		</div>
-		<div id="group2">
-		<div id="d2" class="wrapper-dropdown-3" tabindex="1">
-		    <div>Patterns</div>
-		    <ul class="dropdown">
-		        <li><a href="#">Stripes-h</a></li>
-		        <li><a href="#">Dark Stripes-h</a></li>
-		        <li><a href="#">Stripes-v</a></li>
-		        <li><a href="#">Dark Stripes-v</a></li>
-		        <li><a href="#">Glossy</a></li>
-		        <li><a href="#">Blueprint</a></li>
-		        <li><a href="#">Dots</a></li>
-		        <li><a href="#">Dark Dots</a></li>
-		        <li><a href="#">Cubes</a></li>
-		        <li><a href="#">Dark Cubes</a></li>
-		        <li><a href="#">Pluses</a></li>
-		        <li><a href="#">Steps</a></li>
-		        <li><a href="#">LED</a></li>
-		        <li><a href="#">Hexagon</a></li>
-		        <li><a href="#">Noise</a></li>
-		    </ul>
-		</div>
-		</div>
-		<div id="group3">
-		<div id="d3" class="wrapper-dropdown-3" tabindex="1">
-		    <div>Color (FlatUI)</div>
-		    <ul class="dropdown">
-		        <li><a href="#">Spectrum</a></li>
-		        <li><a href="#">Turqoise</a></li>
-		        <li><a href="#">Emerald</a></li>
-		        <li><a href="#">Peter-river</a></li>
-		        <li><a href="#">amethyst</a></li>
-		        <li><a href="#">Wet-asphalt</a></li>
-		        <li><a href="#">Green-sea</a></li>
-		        <li><a href="#">Nephritis</a></li>
-		        <li><a href="#">Belize-hole</a></li>
-		        <li><a href="#">Wisteria</a></li>
-		        <li><a href="#">Midnight-blue</a></li>
-		        <li><a href="#">Sunflower</a></li>
-		        <li><a href="#">Carrot</a></li>
-		        <li><a href="#">Alizarin</a></li>
-		        <li><a href="#">Clouds</a></li>
-		        <li><a href="#">Concrete</a></li>
-		        <li><a href="#">Orange</a></li>
-		        <li><a href="#">Pumpkin</a></li>
-		        <li><a href="#">Pomegranite</a></li>
-		        <li><a href="#">Silver</a></li>
-		        <li><a href="#">Asbestos</a></li>
-		    </ul>
-		</div>
-		<div id="d4" class="wrapper-dropdown-3" tabindex="1">
-		    <div>Blend</div>
-		    <ul class="dropdown">
-		        <li><a href="#">Multiply</a></li>
-		        <li><a href="#">Screen</a></li>
-		        <li><a href="#">Overlay</a></li>
-		        <li><a href="#">Darken</a></li>
-		        <li><a href="#">Lighten</a></li>
-		        <li><a href="#">Color-Dodge</a></li>
-		        <li><a href="#">Color-burn</a></li>
-		        <li><a href="#">Hard light</a></li>
-		        <li><a href="#">Soft Light</a></li>
-		        <li><a href="#">Difference</a></li>
-		        <li><a href="#">Exclusion</a></li>
-		        <li><a href="#">Hue</a></li>
-		        <li><a href="#">Saturation</a></li>
-		        <li><a href="#">Color</a></li>
-		        <li><a href="#">Luminosity</a></li>
+#### Color Effects
+
+- Fade
+- Saturate
+- Tint
+- Opacity
+- Black & White
+- Dark
+- Bright
+- Sepia
+- Contrast
+- Invert
+- Hue
+
+#### Patterns
+
+- Stripes-h
+- Dark Stripes-h
+- Stripes-v
+- Dark Stripes-v
+- Glossy
+- Blueprint
+- Dots
+- Dark Dots
+- Cubes
+- Dark Cubes
+- Pluses
+- Steps
+- LED
+- Hexagon
+- Noise
+
+#### Colors (Flat UI)
+
+- Spectrum
+- Turqoise
+- Emerald
+- Peter-river
+- amethyst
+- Wet-asphalt
+- Green-sea
+- Nephritis
+- Belize-hole
+- Wisteria
+- Midnight-blue
+- Sunflower
+- Carrot
+- Alizarin
+- Clouds
+- Concrete
+- Orange
+- Pumpkin
+- Pomegranite
+- Silver
+- Asbestos
+
+#### Blend Modes
+
+- Multiply
+- Screen
+- Overlay
+- Darken
+- Lighten
+- Color-Dodge
+- Color-burn
+- Hard light
+- Soft Light
+- Difference
+- Exclusion
+- Hue
+- Saturation
+- Color
+- Luminosity
 
 ### Compatibility
-IE 9 + 
-
-### Using your own colors/configuring
-
-### [Flat UI Colors](http://flatuicolors.com/ "Flat UI Colors")
+IE 9+, 
 
 ### License
 
@@ -140,7 +139,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-### Attributions 
+### Attributions
+
+[Flat UI Colors](http://flatuicolors.com/ "Flat UI Colors")
 
 I got some of the initial css code for the patterns from the below, they're awesome, check them out!
 
