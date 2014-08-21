@@ -31,6 +31,9 @@
 			$('body').addClass('emerald');
 			$('body').addClass('color-burn');
 		});
+		$('#filter5').click(function(){
+			$('body').removeClass();
+		});
 	});
 	</script>
 </head>
@@ -119,7 +122,10 @@ Blend Modes
 			<div align="right"><input type="submit" value=".pumpkin .multiply" id="filter1"></div>
 			<div align="right"><input type="submit" value=".emerald .color-burn" id="filter4"></div>
 			<div align="right"><input type="submit" value=".dark .dots" id="filter2"></div>
-			<div align="right"><input type="submit" value=".blur" id="filter3"></div>	
+			<div align="right"><input type="submit" value=".blur" id="filter3">
+			</div>
+			<div align="right"><input type="submit" value="Original" id="filter5">
+			</div>	
 			<h5>Lots more filters<br>see the documentation @ github</h5>	
 		</div>
 	</div>
