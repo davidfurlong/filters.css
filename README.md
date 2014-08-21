@@ -1,5 +1,8 @@
 # Filters.css
 
+ 
+http://davidfurlong.github.io/filters.css
+
 Really easy to use image filters, patterns and color blending.
 Intended to help make full image backgrounds on websites better.
 
