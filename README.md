@@ -1,13 +1,15 @@
-### Filters.css
+# Filters.css
 
 Really easy to use image filters, patterns and color blending.
 Intended to help make full image backgrounds on websites better.
 
-### Instructions
+http://davidfurlong.github.io/filters.css
 
-## Filters.css for background images: (fully supported)
+## Instructions
 
-# CSS
+### Filters.css for background images: (fully supported)
+
+#### CSS
 	#someName:after {
 		content: '';
 		top: 0;
@@ -18,7 +20,7 @@ Intended to help make full image backgrounds on websites better.
 		background: url('https://s3.amazonaws.com/ooomf-com-files/pHyYeNZMRFOIRpYeW7X3_manacloseup%20copy.jpg');
 	}
 
-# HTML
+#### HTML
 
 	<div id="someName" class="tint"></div> // Effects
 
@@ -30,20 +32,90 @@ OR
 
 	<div id="someName" class="amethyst screen"></div> // Blend Modes
 
-# Filters.css for img tags: (blend modes not supported)
+### Filters.css for img tags: (blend modes not supported)
 
-# HTML
+#### HTML
 
 	<img id="someOtherName" class="tint" src="someSource.jpg"> // Only Effects & Patterns
 
 ### List of class names
 
+#### Color Effects
+
+- Fade
+- Saturate
+- Tint
+- Opacity
+- Black & White (.bw)
+- Dark
+- Bright
+- Sepia
+- Contrast
+- Invert
+- Hue
+
+#### Patterns
+
+- Stripes-h
+- Dark Stripes-h
+- Stripes-v
+- Dark Stripes-v
+- Glossy
+- Blueprint
+- Dots
+- Dark Dots
+- Cubes
+- Dark Cubes
+- Pluses
+- Steps
+- LED
+- Hexagon
+- Noise
+
+#### Colors (Flat UI)
+
+- Spectrum
+- Turqoise
+- Emerald
+- Peter-river
+- amethyst
+- Wet-asphalt
+- Green-sea
+- Nephritis
+- Belize-hole
+- Wisteria
+- Midnight-blue
+- Sunflower
+- Carrot
+- Alizarin
+- Clouds
+- Concrete
+- Orange
+- Pumpkin
+- Pomegranite
+- Silver
+- Asbestos
+
+#### Blend Modes
+
+- Multiply
+- Screen
+- Overlay
+- Darken
+- Lighten
+- Color-Dodge
+- Color-burn
+- Hard light
+- Soft Light
+- Difference
+- Exclusion
+- Hue
+- Saturation
+- Color
+- Luminosity
+
 ### Compatibility
-IE 9 + 
-
-### Using your own colors/configuring
-
-### [Flat UI Colors](http://flatuicolors.com/ "Flat UI Colors")
+IE 9+, 
 
 ### License
 
@@ -69,7 +141,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-### Attributions 
+
+### Contributing
+
+Things to do:
+- Add Instagramesque filters which are more advanced and use canvas
+- Add normals colors
+- Allow applying of multiple filters
+- Reduce nr of filters
+
+### Attributions
+
+[Flat UI Colors](http://flatuicolors.com/ "Flat UI Colors")
 
 I got some of the initial css code for the patterns from the below, they're awesome, check them out!
 
