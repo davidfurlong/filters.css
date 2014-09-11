@@ -10,10 +10,18 @@ http://davidfurlong.github.io/filters.css
 ### Filters.css for background images: (fully supported)
 
 #### CSS
+	#someName {
+		background: url('https://s3.amazonaws.com/ooomf-com-files/pHyYeNZMRFOIRpYeW7X3_manacloseup%20copy.jpg');
+		position: relative;
+		display: block;
+		z-index: 1;
+	}
+
 	#someName:after {
 		content: '';
 		top: 0;
 		left: 0;
+		z-index: -1;
 		height: 100%;
 		width: 100%;
 		position: absolute;
