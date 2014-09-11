@@ -20,7 +20,8 @@
 		function newImages() {
 			$('.image').css('background-image', 'url("http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'")');
 			$('.image:after').css('background-image', 'url("http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'")');
-			document.styleSheets[0].addRule('.image:after', 'background-image:url(\"http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'")', 1);
+			// document.styleSheets[1].addRule('.image:after', 'background-image:url(\"http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'")', 1);
+			document.styleSheets[1].insertRule('.image:after { background-image:url(\"http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'");}', 1);
 			iter++;
 			if (iter == categories.length)
 				iter = 0;
