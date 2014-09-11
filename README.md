@@ -1,7 +1,8 @@
 # Filters.css
 
-Really easy to use image filters, patterns and color blending.
-Intended to help make full image backgrounds on websites better.
+Really easy to use image filters, patterns and color blending presets.
+Intended to help make full image backgrounds on websites better, but 
+can be used for img tags, divs and general dom elements.
 
 http://davidfurlong.github.io/filters.css
 
@@ -9,16 +10,17 @@ http://davidfurlong.github.io/filters.css
 
 ### Filters.css for background images: (fully supported)
 
-#### CSS
+#### CSS (Add the background to the element and the pseudo after element)
+
 	#someName:after {
-		content: '';
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		position: absolute;
 		background: url('https://s3.amazonaws.com/ooomf-com-files/pHyYeNZMRFOIRpYeW7X3_manacloseup%20copy.jpg');
 	}
+	#someName {
+		background: url('https://s3.amazonaws.com/ooomf-com-files/pHyYeNZMRFOIRpYeW7X3_manacloseup%20copy.jpg');
+	}
+
+Note if you have any background modifying css this needs to go in both classes.
+Ex. background-size, background-repeat, ...
 
 #### HTML
 
@@ -32,11 +34,25 @@ OR
 
 	<div id="someName" class="amethyst screen"></div> // Blend Modes
 
-### Filters.css for img tags: (blend modes not supported)
+### Filters.css for img tags: (blending modes not supported)
 
 #### HTML
 
-	<img id="someOtherName" class="tint" src="someSource.jpg"> // Only Effects & Patterns
+Color Effects:
+
+	<img id="someOtherName" class="tint" src="someSource.jpg">
+
+Patterns need a div container:
+
+	<div class="stripes-v">
+	<img id="someOtherName" src="someSource.jpg"> // Only Effects & Patterns
+	</div>
+
+### Filters.css for dom elements: (blend modes not supported)
+
+Add "-el" to the end of class names of the existing filters.
+For example 
+	.blur-el
 
 ### List of class names
 
@@ -56,6 +72,8 @@ OR
 
 #### Patterns
 
+
+- grid
 - Stripes-h
 - Dark Stripes-h
 - Stripes-v
@@ -115,7 +133,9 @@ OR
 - Luminosity
 
 ### Compatibility
-IE 9+, 
+Firefox 30+, Chrome 27+, Safari 6.1+, Opera 23+ 
+(No IE Support)
+http://caniuse.com/#feat=css-filters
 
 ### License
 

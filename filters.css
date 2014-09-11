@@ -4,8 +4,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
 	z-index: -1;
 	-webkit-filter: saturate(0%);
 	-moz-filter: saturate(0%);
@@ -14,7 +12,7 @@
 	filter: saturate(0%);
 }
 
-img.fade {
+img.fade, .fade-el {
 	-webkit-filter: saturate(0%);
 	-moz-filter: saturate(0%);
 	-ms-filter: saturate(0%);
@@ -28,8 +26,8 @@ img.fade {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: saturate(300%);
 	-moz-filter: saturate(300%);
@@ -38,7 +36,7 @@ img.fade {
 	filter: saturate(300%);
 }
 
-img.saturate {
+img.saturate, .saturate-el {
 	-webkit-filter: saturate(300%);
 	-moz-filter: saturate(300%);
 	-ms-filter: saturate(300%);
@@ -52,8 +50,8 @@ img.saturate {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: opacity(50%);
 	-moz-filter: opacity(50%);
@@ -62,7 +60,7 @@ img.saturate {
 	filter: opacity(50%);
 }
 
-img.opacity {
+img.opacity, .opacity-el {
 	-webkit-filter: opacity(50%);
 	-moz-filter: opacity(50%);
 	-ms-filter: opacity(50%);
@@ -76,8 +74,8 @@ img.opacity {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
@@ -86,7 +84,7 @@ img.opacity {
 	filter: blur(5px);
 }
 
-img.blur {
+img.blur, .blur-el {
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
 	-ms-filter: blur(5px);
@@ -100,8 +98,8 @@ img.blur {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
@@ -110,7 +108,7 @@ img.blur {
 	filter: grayscale(100%);
 }
 
-img.bw {
+img.bw, .bw-el {
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
@@ -118,14 +116,15 @@ img.bw {
 	filter: grayscale(100%);
 }
 
+
 .dark:not(img):after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: brightness(20%);
 	-moz-filter: brightness(20%);
@@ -134,7 +133,7 @@ img.bw {
 	filter: brightness(20%);
 }
 
-img.dark {
+img.dark, .dark-el {
 	-webkit-filter: brightness(20%);
 	-moz-filter: brightness(20%);
 	-ms-filter: brightness(20%);
@@ -148,8 +147,8 @@ img.dark {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: brightness(180%);
 	-moz-filter: brightness(180%);
@@ -158,7 +157,7 @@ img.dark {
 	filter: brightness(180%);
 }
 
-img.bright {
+img.bright, .bright-el {
 	-webkit-filter: brightness(180%);
 	-moz-filter: brightness(180%);
 	-ms-filter: brightness(180%);
@@ -172,8 +171,8 @@ img.bright {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: sepia(100%);
 	-moz-filter: sepia(100%);
@@ -182,7 +181,7 @@ img.bright {
 	filter: sepia(100%);
 }
 
-img.sepia {
+img.sepia, .sepia-el {
 	-webkit-filter: sepia(100%);
 	-moz-filter: sepia(100%);
 	-ms-filter: sepia(100%);
@@ -196,8 +195,8 @@ img.sepia {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: contrast(200%);
 	-moz-filter: contrast(200%);
@@ -206,7 +205,7 @@ img.sepia {
 	filter: contrast(200%);
 }
 
-img.contrast {
+img.contrast, .contrast-el {
 	-webkit-filter: contrast(200%);
 	-moz-filter: contrast(200%);
 	-ms-filter: contrast(200%);
@@ -220,8 +219,8 @@ img.contrast {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: invert(100%);
 	-moz-filter: invert(100%);
@@ -230,7 +229,7 @@ img.contrast {
 	filter: invert(100%);
 }
 
-img.invert {
+img.invert, .invert-el {
 	-webkit-filter: invert(100%);
 	-moz-filter: invert(100%);
 	-ms-filter: invert(100%);
@@ -244,8 +243,8 @@ img.invert {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: hue-rotate(180deg);
 	-moz-filter: hue-rotate(180deg);
@@ -254,7 +253,7 @@ img.invert {
 	filter: hue-rotate(180deg);
 }
 
-img.hue {
+img.hue, .hue-el {
 	-webkit-filter: hue-rotate(180deg);
 	-moz-filter: hue-rotate(180deg);
 	-ms-filter: hue-rotate(180deg);
@@ -268,8 +267,8 @@ img.hue {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	-webkit-filter: sepia(1) hue-rotate(200deg);
 	-moz-filter: sepia(1) hue-rotate(200deg);
@@ -278,7 +277,7 @@ img.hue {
 	filter: sepia(1) hue-rotate(200deg);
 }
 
-img.tint {
+img.tint, .tint-el {
 	-webkit-filter: sepia(1) hue-rotate(200deg);
 	-moz-filter: sepia(1) hue-rotate(200deg);
 	-ms-filter: sepia(1) hue-rotate(200deg);
@@ -288,97 +287,122 @@ img.tint {
 
 /* PATTERNS */
 
-.grid:after {
+.grid:after, .grid-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+	
 	z-index: -1;
 	background-color: transparent;
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGElEQVQIW2NkYGD4D8SMMBrEQAFwGZwqAKzeBAUqvbkLAAAAAElFTkSuQmCC');
 	background-size: 4px 4px;
 }
 
-.stripes-h:after {
+.grid-el:after {
+	z-index: 0;
+}
+
+.stripes-h:after, .stripes-h-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
 	background-size: 10px 2px;
 }
 
-.dark.stripes-h:after {
+.stripes-h-el:after {
+	z-index: 0;
+}
+
+.dark.stripes-h:after, .dark.stripes-h-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	background-image: linear-gradient(transparent 50%, rgba(0,0,0,.5) 50%);
 	background-size: 10px 2px;
 }
 
-.stripes-v:after {
+.dark.stripes-h-el:after {
+	z-index: 0;
+}
+
+.stripes-v:after, .stripes-v-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
 	background-size: 2px 10px;
 }
 
-.dark.stripes-v:after {
+.stripes-v-el:after {
+	z-index: 0;
+}
+
+.dark.stripes-v:after, .dark.stripes-v-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	background-image: linear-gradient(90deg, transparent 50%, rgba(0,0,0,.5) 50%);
 	background-size: 2px 10px;
 }
 
-.glossy:after {
+.dark.stripes-v-el:after {
+	z-index: 0;
+}
+
+/*Needs work*/
+.glossy:after, .glossy-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	background-image: linear-gradient(45deg,  transparent 50%, rgba(255,255,255,.15) 50%);
 }
 
-.blueprint:after {
+.glossy-el:after {
+	z-index: 0;
+}
+
+.blueprint:after, .blueprint-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	opacity: 0.15;
@@ -390,14 +414,18 @@ img.tint {
 	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
 }
 
-.dots:after {
+.blueprint-el:after {
+	z-index: 0;
+}
+
+.dots:after, .dots-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	opacity: 0.15;
@@ -407,14 +435,18 @@ img.tint {
 	background-position: 0 0, 30px 30px;
 }
 
-.dark.dots:after {
+.dots-el:after {
+	z-index: 0;
+}
+
+.dark.dots:after, .dark.dots-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background-color: transparent;
 	opacity: 0.15;
@@ -424,14 +456,18 @@ img.tint {
 	background-position: 0 0, 30px 30px;
 }
 
-.cubes:after {
+.dark.dots-el:after {
+	z-index: 0;
+}
+
+.cubes:after, .cubes-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	opacity: 0.15;
 	background-color:#556;
@@ -445,14 +481,18 @@ img.tint {
 	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 
-.dark.cubes:after {
+.cubes-el:after {
+	z-index: 0;
+}
+
+.dark.cubes:after, .dark.cubes-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	opacity: 0.2;
 	background-color:#556;
@@ -466,14 +506,19 @@ img.tint {
 	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 
-.pluses:after {
+.dark.cubes-el:after {
+	z-index: 0;
+}
+
+/*Needs work*/
+.pluses:after, .pluses-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	opacity: 0.2;
 	background: 
@@ -485,14 +530,19 @@ img.tint {
 	background-size:50px 50px, 150px 150px, 50px 50px, 50px 50px;
 }
 
-.steps:after {
+.pluses-el:after {
+	z-index: 0;
+}
+
+/*Needs work*/
+.steps:after, .steps-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	opacity: 0.05;
 	background-color: transparent;
@@ -511,46 +561,65 @@ img.tint {
 	linear-gradient(155deg, white 10px, transparent 10px);
 }
 
-.led:after {
+.steps-el:after {
+	z-index: 0;
+}
+
+/*Needs work*/
+.led:after, .led-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	opacity: 0.2;
 	background-size: 3px 3px;
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0tMiAxMEwxMCAtMlpNMTAgNkw2IDEwWk0tMiAyTDIgLTIiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSI0LjUiPjwvcGF0aD4KPC9zdmc+"),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGMTkiPjwvc3RvcD4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMENGIj48L3N0b3A+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiPjwvcmVjdD4KPC9zdmc+");
 }
 
-.hexagon:after {
+.led-el:after {
+	z-index: 0;
+}
+
+/*Needs work*/
+.hexagon:after, .hexagon-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	opacity: 0.2;
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjhkMjAzIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZjYyOSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZTUwMyIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==");
 	background-size: 224px 400px;
 }
 
-.noise:after {
+.hexagon-el:after {
+	z-index: 0;
+}
+
+/*Needs work*/
+.noise:after, .noise-el:after {
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	opacity: 0.3;
 	background-size: 4800px 4800px;
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCI+CjxmaWx0ZXIgaWQ9Im4iIHg9IjAiIHk9IjAiPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43IiBudW1PY3RhdmVzPSIxMCIgc3RpdGNoVGlsZXM9InN0aXRjaCI+PC9mZVR1cmJ1bGVuY2U+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzAwMCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PSIwLjQiPjwvcmVjdD4KPC9zdmc+");
+}
+
+.noise-el:after {
+	z-index: 0;
 }
 
 /* BLEND MODES */
@@ -615,9 +684,6 @@ img.tint {
 	background-blend-mode: luminosity;
 }
 
-/*screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity
-mix-blend-mode: multiply;*/
-
 /* COLORS */
 
 .spectrum-alt:before {
@@ -626,8 +692,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background:
 		linear-gradient(
@@ -652,8 +718,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 	background:
 		linear-gradient(
@@ -679,39 +745,39 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
-.emerald:after {
+.emerald:after, .green:after {
 	box-sizing: border-box;
 	background-color: #2ecc71; content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
-.peter-river:after {
+.peter-river:after, .blue:after {
 	box-sizing: border-box;
 	background-color: #3498db; content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
-.amethyst:after {
+.amethyst:after, .purple:after {
 	box-sizing: border-box;
 	display: block;
 	background-color: #9b59b6; content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .wet-asphalt:after {
@@ -720,8 +786,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .green-sea:after {
@@ -730,8 +796,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .nephritis:after {
@@ -740,8 +806,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .belize-hole:after {
@@ -750,8 +816,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .wisteria:after {
@@ -760,8 +826,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .midnight-blue:after {
@@ -770,18 +836,18 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
-.sunflower:after {
+.sunflower:after, .yellow:after {
 	box-sizing: border-box;
 	background-color: #f1c40f; content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .carrot:after {
@@ -790,8 +856,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .alizarin:after {
@@ -800,18 +866,18 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
-.clouds:after {
+.clouds:after, .light-gray:after {
 	box-sizing: border-box;
 	background-color: #ecf0f1; content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .concrete:after {
@@ -820,8 +886,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .orange:after {
@@ -830,8 +896,8 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .pumpkin:after {
@@ -840,28 +906,28 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
-.pomegranate:after {
+.pomegranate:after, .red:after {
 	box-sizing: border-box;
 	background-color: #c0392b; content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
-.silver:after {
+.silver:after, .gray:after {
 	box-sizing: border-box;
 	background-color: #bdc3c7; content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }
 .asbestos:after {
@@ -870,7 +936,7 @@ mix-blend-mode: multiply;*/
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;	
+	
+		
 	z-index: -1;
 }

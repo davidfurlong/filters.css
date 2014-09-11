@@ -4,127 +4,79 @@
 	<meta name="description" content="Pure CSS image filter presets for your next project">
 	<meta name="keywords" content="filters.css, filters, css, patterns, blend modes, blending modes, overlay, images">
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="demo.css">
+
 	<link rel="stylesheet" type="text/css" href="filters.css">
+
 	<script>
-	$(document).ready(function(){
-		$('#filter1').click(function(){
-			$('body').removeClass();
-			$('body').addClass('pumpkin');
-			$('body').addClass('multiply');
+		$(document).ready(function(){
+			newImages();
 		});
+		var iter = 0;
+		var categories = ['','abstract','animals','business','cats','city','food','nightlife','fashion','people','nature','sports','technics','transport'];
 
-		$('#filter2').click(function(){
-			$('body').removeClass();
-			$('body').addClass('grid');
-		});
-
-		$('#filter3').click(function(){
-			$('body').removeClass();
-			$('body').addClass('blur');
-		});
-		$('#filter4').click(function(){
-			$('body').removeClass();
-			$('body').addClass('emerald');
-			$('body').addClass('color-burn');
-		});
-		$('#filter5').click(function(){
-			$('body').removeClass();
-		});
-	});
+		function newImages() {
+			$('.image').css('background-image', 'url("http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'")');
+			$('.image:after').css('background-image', 'url("http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'")');
+			document.styleSheets[0].addRule('.image:after', 'background-image:url(\"http://lorempixel.com/'+Math.ceil($(document).width()/3)+'/'+Math.ceil(($(document).height()-250)/2)+'/'+categories[iter]+'")', 1);
+			iter++;
+			if (iter == categories.length)
+				iter = 0;
+		}
 	</script>
 </head>
-<body class="bw"> 
-	<!--
-Color Effects
-
-- Fade
-- Saturate
-- Tint
-- Opacity
-- Black & White
-- Dark
-- Bright
-- Sepia
-- Contrast
-- Invert
-- Hue
-
-Patterns
-
-- Stripes-h
-- Dark Stripes-h
-- Stripes-v
-- Dark Stripes-v
-- Glossy
-- Blueprint
-- Dots
-- Dark Dots
-- Cubes
-- Dark Cubes
-- Pluses
-- Steps
-- LED
-- Hexagon
-- Noise
-
-Colors
-
-- Spectrum
-- Turqoise
-- Emerald
-- Peter-river
-- amethyst
-- Wet-asphalt
-- Green-sea
-- Nephritis
-- Belize-hole
-- Wisteria
-- Midnight-blue
-- Sunflower
-- Carrot
-- Alizarin
-- Clouds
-- Concrete
-- Orange
-- Pumpkin
-- Pomegranite
-- Silver
-- Asbestos
-
-Blend Modes
-
-- Multiply
-- Screen
-- Overlay
-- Darken
-- Lighten
-- Color-Dodge
-- Color-burn
-- Hard light
-- Soft Light
-- Difference
-- Exclusion
-- Hue
-- Saturation
-- Color
-- Luminosity
- -->
-	<div class="splash">
-		<h1>Filters.css</h1>
-		<h2>Super simple styles for your images</h2>
-		<h3><a href="https://github.com/davidfurlong/filters.css/archive/master.zip">Download</a> or <a href="https://github.com/davidfurlong/filters.css">View on Github</a></h3>
-		<div id="buttons">
-			<div align="right"><input type="submit" value=".pumpkin .multiply" id="filter1"></div>
-			<div align="right"><input type="submit" value=".emerald .color-burn" id="filter4"></div>
-			<div align="right"><input type="submit" value=".grid" id="filter2"></div>
-			<div align="right"><input type="submit" value=".blur" id="filter3">
-			</div>
-			<div align="right"><input type="submit" value="Original" id="filter5">
-			</div>	
-			<h5>Lots more filters<br>see the documentation @ github</h5>	
+<body> 
+	<div id="row1">
+		<div id="image1" class="image grid">
+		<span class="label">
+		.grid
+		</span>
+		</div>
+		<div id="image2" class="image blur">
+		<span class="label">
+		.blur
+		</span>
+		</div>
+		<div id="image3" class="image emerald color-burn">
+		<span class="label">
+		.emerald .color-burn
+		</span>
+		</div>
+	</div>	
+	<div id="row2">
+		<div id="image4" class="image hue">
+		<span class="label">
+		.hue
+		</span>
+		</div>
+		<div class="text">
+			<span id="brand">Filters.css</span>
+			<span id="tagline">Hassle free styles for your images</span>
+			<span id="links"><a href="https://github.com/davidfurlong/filters.css/archive/master.zip"><i class="fa fa-download"></i></a> <a href="https://github.com/davidfurlong/filters.css"><i class="fa fa-github"></i></a> <a onclick="location.reload()"><i class="fa fa-rotate-right"></i></a></span>
+		</div>
+		<div id="image5" class="image glossy">
+		<span class="label">
+		.glossy
+		</span>
+		</div>
+	</div>
+	<div id="row3">
+		<div id="image6" class="image pumpkin multiply">
+		<span class="label">
+		.pumpkin .multiply
+		</span>
+		</div>
+		<div id="image7" class="image fade">
+		<span class="label">
+		.fade
+		</span>
+		</div>
+		<div id="image8" class="image stripes-v">
+		<span class="label">
+		.stripes-v
+		</span>
 		</div>
 	</div>
 </body>
